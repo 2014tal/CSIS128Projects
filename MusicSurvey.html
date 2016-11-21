@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>music survey form</title>
+
+    <style>
+    
+    body {
+      margin-right: 2%;
+      margin-left: 2%;
+    }
+
+    legend, div.names {
+      font-weight: bold;
+    }
+
+    fieldset {
+      width: 90%;
+    }
+
+    </style>
+
+  </head>
+  <body>
+  <form action="http://www.markmurtha.com/csis128/readform.asp">
+    <div class="names">Name:<br></div>
+    <input type="text" name="name"><br>
+    <div class="names">E-mail:<br></div>
+    <input type="text" name="e-mail"><br>
+
+    <br>
+
+    <fieldset>
+      <legend>Select your favorite type of music</legend>
+      <input type="checkbox" name="fav_music"> Rock<br>
+      <input type="checkbox" name="fav_music"> Rap<br>
+      <input type="checkbox" name="fav_music"> country<br>
+      <input type="checkbox" name="fav_music"> other<br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>How often do you purchase your music?</legend>
+      <input type="radio" name="buy_music" checked> Always<br>
+      <input type="radio" name="buy_music"> Sometimes<br>
+      <input type="radio" name="buy_music"> Never<br>
+    </fieldset>
+
+    <br>
+
+    <div class="names">Where do you listen to your music?<br></div>
+    <select name="where_music" size="3">
+      <option value="Here">Here</option>
+      <option value="There">There</option>
+      <option value="Everywhere">Everywhere</option>
+      <option value="Nowhere">Nowhere</option>
+    </select><br>
+
+    <br>
+
+    <div class="names">What role does music play in your life?<br></div>
+    <textarea name="music_life" cols="60" rows="3" placeholder="Music in your life."></textarea><br>
+    <br>
+    <input type="submit" name="submit" value="Submit"><input type="reset" name ="reset"><br>
+
+    <br>
+
+  </form>
+  <p>Form created by: Toby Linn</p>
+  <a href="mailto:S1423061@student.mcckc.edu">S1423061@student.mcckc.edu</a>
+  </body>
+</html>

@@ -5,16 +5,38 @@
     <title>Work In progress</title>
 	<link rel="stylesheet" href="bigProject.css">
 	<link rel="icon" href="favicon.ico">
- <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title>Work In progress</title>
 		<link rel="stylesheet" href="bigProject.css">
 		<link rel="icon" href="favicon.ico">
+		<script>
+			function validateForm() {
+				if (document.forms[0].userEmail.value == "") {
+					alert("Your email must be filled out.");
+					return false;
+				}
+				if (document.forms[0].userFirstName.value == "") {
+					alert("Your first name must be filled out.");
+					return false;
+				}
+				if (document.forms[0].userLastName.value == "") {
+					alert("Your last name must be filled out.");
+					return false;
+				}
+				if (document.forms[0].zipCode.value == "") {
+					alert("Your zip code must be filled out.");
+					return false;
+				}
+				if (document.forms[0].streetAddress.value == "") {
+					alert("Your street address must be filled out.");
+					return false;
+				}
+			}
+		</script>
 	</head>
 	<body>
-  
 		<div id="mainSectionWrapper">
 			<header>
 				<a href="homePage.html"><div id="logo"><div id="WorkInProgress">Work In Progress</div><div id="computerRepair">Computer Repair and Recycling</div></div></a>
@@ -46,8 +68,25 @@
 			</aside>
 	
 			<section>
-				<h1>This page is a work in progress!</h1>
-			
+				<h1 id="aboutHeader">Subscribe to our newsletter!</h1>
+				<p>
+					<form action="#" onsubmit= "return validateForm();">
+					First Name: <br><input type="text" name="userFirstName" id="userFirstName">
+					<br>
+					Last Name: <br><input type="text" name="userLastName" id="userLastName">
+					<br>
+					E-Mail Address: <br><input type="text" name="userEmail" id="userEmail">
+					<br>
+					Zip Code: <br><input type="text" name="zipCode" id="zipCode">
+					<br>
+					Street Address: <br><input type="text" name="streetAddress" id="streetAddress">
+					<br><br>
+					<input type="submit" value="Sign Up Now!">
+					</form>
+				</p>
+				<h2>Any Questions?</h2>
+				<p>Email us at: <a id="aboutEMailLink" href="mailto:S1423061@student.mcckc.edu">S1423061@student.mcckc.edu</a></p>
+				
 			</section>
 		</div>
 	</body>

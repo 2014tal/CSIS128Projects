@@ -23,8 +23,6 @@ header {
 	width: 100%;
 }
 
-
-
 #WorkInProgress {
 	font-size: 2.5em;
 	font-weight: bold;
@@ -88,13 +86,29 @@ section {
 
 p.RepairP {
 	font-weight: normal;
-	font-size:0.7em;
+	font-size: 0.7em;
 }
 
-h1#repairSection {
-	
+h1#RecyclingH1 {
+	font-size: 1.0em;
 }
 
-h2#repairSection {
-	
+a#aboutEMailLink {
+	color: black;
+}
+
+#aboutHeader {
+	font-size: 1.5em;
+}
+
+#recyclingEmail {
+	color: black;
+}
+
+#facebook {
+	color: black;
+}
+
+#yelp {
+	color: black;
 }

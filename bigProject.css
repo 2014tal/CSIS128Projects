@@ -112,3 +112,16 @@ a#aboutEMailLink {
 #yelp {
 	color: black;
 }
+
+#homePageLogo {
+	 width: 90;
+	 height: 85;
+	 border-radius: 20%;
+	 animation: spin_move 3s linear;
+}
+
+
+
+@keyframes spin_move { 
+	100% { transform: rotate(360deg); transform:rotate(360deg); } 
+}
